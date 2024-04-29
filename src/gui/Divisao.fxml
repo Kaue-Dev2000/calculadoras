@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?> <!-- Todos os imports dos nodos utilizados nessa tela -->
+<?import javafx.scene.control.TextField?>  
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="598.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DivisaoControlador">
+   <children>
+      <Label text="Calcular divisão">
+         <padding>
+            <Insets left="30.0" top="30.0" />
+         </padding>
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+         <items>
+            <Button fx:id="btDividir" mnemonicParsing="false" onAction="#onBtDividirAction" text="Dividir">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </items>
+         <padding>
+            <Insets bottom="10.0" left="30.0" top="10.0" />
+         </padding>
+      </ToolBar>
+      <Label text="Valor 1">
+         <VBox.margin>
+            <Insets left="30.0" top="100.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtValor1" promptText="Digite um valor aqui">
+         <VBox.margin>
+            <Insets left="30.0" right="400.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="30.0" top="30.0" />
+         </padding>
+      </TextField>
+      <Label text="Valor 2">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="30.0" top="50.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="txtValor2" promptText="Digite um valor aqui">
+         <padding>
+            <Insets bottom="30.0" top="30.0" />
+         </padding>
+         <VBox.margin>
+            <Insets left="30.0" right="400.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Resultado">
+         <VBox.margin>
+            <Insets left="30.0" top="60.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelResultado">
+         <VBox.margin>
+            <Insets left="30.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

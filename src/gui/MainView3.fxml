@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Todos os imports dos nodos utilizados nessa tela -->
+
+<VBox prefHeight="590.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainView3Controlador">
+   <children>
+      <MenuBar>
+         <menus>
+            <Menu mnemonicParsing="false" text="Tipo de Calculadora">
+               <items>
+                  <MenuItem fx:id="menuItemCalculadoraFinanceira" mnemonicParsing="false" onAction="#onMenuItemCalculadoraFinanceiraAction" text="Calculadora Fincaneira" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Operação">
+               <items>
+                  <MenuItem fx:id="menuItemSoma" mnemonicParsing="false" onAction="#onMenuItemSomaAction" text="Soma" />
+                  <MenuItem fx:id="menuItemSubtracao" mnemonicParsing="false" onAction="#onMenuItemSubtracaoAction" text="Subtração" />
+                  <MenuItem fx:id="menuItemMultiplicacao" mnemonicParsing="false" onAction="#onMenuItemMultiplicacaoAction" text="Multiplicação" />
+                  <MenuItem fx:id="menuItemDivisao" mnemonicParsing="false" onAction="#onMenuItemDivisaoAction" text="Divisão" />
+                  <MenuItem fx:id="menuItemRaiz" mnemonicParsing="false" onAction="#onMenuItemRaizAction" text="Raiz" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label text="Calculadora comum">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="30.0" top="80.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="Escolha um tipo de operação a partir do menu no início da tela">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="30.0" top="15.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="Caso queira, selecione a Calculadora Financeira a partir do menu no início da tela">
+         <VBox.margin>
+            <Insets left="30.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Por Kaue, Lucas do Vale, Lucas O., Lucas Y., Arthur">
+         <VBox.margin>
+            <Insets left="30.0" top="300.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="N°s: 15, 19, 20, 21, 1">
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>
